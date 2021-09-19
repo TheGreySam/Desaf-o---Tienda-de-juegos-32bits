@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">32Bits</a>
+    <a class="navbar-brand p-2" href="#">32Bits</a>
     <button
       class="navbar-toggler"
       type="button"

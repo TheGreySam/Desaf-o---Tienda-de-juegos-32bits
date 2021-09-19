@@ -1,8 +1,9 @@
 <template>
 
-    <div>
+    <div class="p-5">
         <h1>32bits</h1>
         <h2>Juegos de PC y consolas</h2>
+        <Juegos />
         
         
     
@@ -11,8 +12,10 @@
    
 </template>
 <script>
+import Juegos from "../components/Juegos.vue";
 //import {mapState} from 'vuex'
 export default {
+    components: { Juegos },
     //computed: {
         //...mapState(){
             //state
