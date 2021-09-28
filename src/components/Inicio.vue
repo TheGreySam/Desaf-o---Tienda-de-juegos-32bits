@@ -53,8 +53,5 @@ export default {
 }
 </script>
 <style scoped>
-#menu-v8 a {
-  text-shadow: 1px 1px #000;
-  background-color: red;
-}
+
 </style>

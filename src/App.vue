@@ -2,6 +2,7 @@
   <div id="app">
     <Navbar />
     
+    
     <transition name="vista" >
       <router-view class="p-3"></router-view>
     </transition>
@@ -11,8 +12,9 @@
 <script>
 import Navbar from "./components/Navbar.vue";
 
+
 export default {
-  components: {Navbar},
+  components: { Navbar },
   name: "App"
 }
 </script>

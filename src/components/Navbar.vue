@@ -1,5 +1,6 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <i class="fas fa-gamepad p-2 fa-3x text-danger"></i>
     <a class="navbar-brand p-2" href="#">32Bits</a>
     <button
       class="navbar-toggler"

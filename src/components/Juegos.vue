@@ -12,11 +12,19 @@
 <script>
 export default {
     name: "Juegos",
+    data: () => ({
+        dataJuegos: "",
+    }),
     props: {
-        juegos: {
-            type:Array,
+        juego: 
+        {
+//            type:Array,
+            type: Object,
             require: true
         }
+    },
+    computed: {
+
     }
 }
 </script>

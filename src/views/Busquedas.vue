@@ -1,17 +1,42 @@
 <template>
   <div>
-    <section>
-      <h3>Filtro</h3>
+    <section class="">
+      <h1>Búsqueda</h1>
+      <h3>Introduce un Filtro</h3>
+      <div class="p-2">
+  <div class="row">
+    <div class="col-sm w-50">
+      <input 
+          class="form-control mr-sm-2" 
+          type="number" 
+          placeholder="Escriba el nombre de su producto" 
+          :value="$store.state.busqueda"
+          @input="$store.dispatch('setBusqueda', Number.parseInt($event.target.value))"
+          >
+    </div>
+    <div class="col-sm">
+      <button 
+          class="btn btn-primary my-2 my-sm-0" 
+          type="submit">Search
+        </button>
+    </div>
+    
+  </div>
+</div>
+      
       <input
         type="number"
-        placeholder="Escriba el nombre del producto"
+         placeholder="Escriba el nombre del producto"
         :value="$store.state.busqueda"
         @input="
           $store.dispatch('setBusqueda', Number.parseInt($event.target.value))
         "
       />
-
       <Juegos
+        
+      />
+      <!-- 
+        <Juegos
         v-if="$store.getters.juegosSegunBusqueda.length > 0"
         :juegos="$store.getters.juegosSegunBusqueda"
       />
@@ -30,6 +55,11 @@
       <h3>Listado de juegos</h3>
 
       <Juegos :juegos="$store.state.juegos" />
+        -->
+
+        <Juegos />
+
+      
     </section>
   </div>
 </template>

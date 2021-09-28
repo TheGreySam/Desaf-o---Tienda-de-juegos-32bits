@@ -37,7 +37,8 @@ const store = new Vuex.Store({
         juego.nombre.toLowerCase().includes(state.busqueda.toLowerCase())
         );
       }
-    }
+    },
+    
   },
   mutations: {
     SET_BUSQUEDA(state, nuevaBusqueda) {

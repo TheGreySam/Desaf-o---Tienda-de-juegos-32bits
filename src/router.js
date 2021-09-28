@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Inicio from "./pages/Inicio.vue"
+import Inicio from "./views/Inicio.vue"
 
 Vue.use(Router)
 
@@ -18,19 +18,19 @@ export default new Router({
         },
         { 
             path: "/busquedas", 
-            component: () => import("./pages/Busquedas.vue") 
+            component: () => import("./views/Busquedas.vue") 
         },
         { 
             path: "/ventas", 
-            component: () => import("./pages/Ventas.vue") 
+            component: () => import("./views/Ventas.vue") 
         },
         { 
             path: "/total", 
-            component: () => import("./pages/Total.vue") 
+            component: () => import("./views/Total.vue") 
         },
         { 
             path: "*", 
-            component: () => import("./pages/404.vue") 
+            component: () => import("./views/404.vue") 
         },
       ],
 })
